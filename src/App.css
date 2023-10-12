@@ -4,3 +4,8 @@
   padding: 2rem;
   text-align: center;
 }
+
+.background {
+  background-color: rgb(254, 250, 224);
+  height: 1050px;
+}

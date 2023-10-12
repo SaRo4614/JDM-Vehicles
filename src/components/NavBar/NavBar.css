@@ -1,3 +1,18 @@
 * {
     margin: 0;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: rgb(20, 33, 61);
+    height: 95px;
+}
+
+.li {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
