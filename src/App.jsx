@@ -1,34 +1,39 @@
-import './App.css'
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+//CSS
+import "./App.css";
+//COMPONENTS
+import NavBar from "./components/NavBar/NavBar";
+//ROUTER DOM
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+//CONTEXT
+import CartProvider from "./context/CartContext";
+//PAGES
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
 import DetailPage from "./pages/DetailPage/DetailPage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import CartPage from "./pages/CartPage/CartPage";
+import FormPage from "./pages/FormPage/FormPage";
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <NavBar />
-        <div className='background'>
-          <ItemListContainer greeting={'Welcome!'}/>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/detail/:id" element={<DetailPage />} />
-            <Route path="/category/:categoryId" element={<CategoryPage />} />
-          </Routes>
+    <CartProvider>
+      <Router>
+        <div>
+          <NavBar />
+          <div className="background">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/detail/:id" element={<DetailPage />} />
+              <Route path="/category/:type" element={<CategoryPage />} />
+              <Route path="/cart" element={<CartPage />} />
+              <Route path="/form" element={<FormPage />} />
+            </Routes>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </CartProvider>
   );
 };
 
 export default App;
-
-

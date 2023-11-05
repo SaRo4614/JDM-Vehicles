@@ -1,0 +1,48 @@
+.item-count {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.item-count button {
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-res {
+    color: red;
+    font-size: 20px;
+}
+
+.button-sum {
+    color: forestgreen;
+    font-size: 20px;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 50%;
+    height: 45px;
+    background-color: rgb(67, 170, 139);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+}
+
+.add-to-cart:hover {
+    cursor: pointer;
+    background-color: rgb(254, 250, 224);
+    color: black;
+    transition: background-color .5s;
+    border: solid 1px rgb(67, 170, 139);
+}
+
+.amount {
+    font-weight: 700;
+}

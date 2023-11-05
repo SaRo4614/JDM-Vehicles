@@ -1,11 +1,13 @@
 #App {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+  background-color: rgb(254, 250, 224);
 }
 
 .background {
+  padding-top: 50px;
   background-color: rgb(254, 250, 224);
-  height: 1050px;
+  height: 1080px;
 }

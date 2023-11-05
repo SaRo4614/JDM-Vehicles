@@ -1,9 +1,9 @@
-import CardItems from "../../components/CardItems/CardItems";
+import ItemListContainer from "../../components/ItemListContainer/ItemListContainer";
 
 const HomePage = () => {
   return (
     <div>
-      <CardItems />
+      <ItemListContainer />
     </div>
   );
 };

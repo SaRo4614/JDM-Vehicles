@@ -1,0 +1,7 @@
+.about {
+    display: flex;
+    margin: 100px auto;
+    width: 800px;
+    padding: 1rem;
+    border: solid darkgray;
+}

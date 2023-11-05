@@ -1,11 +1,10 @@
-import "./NavBar.css"
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
+import "./NavBar.css";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
 import CartWidget from "../CartWidget/CartWidget";
 import imagen from "./jdmlogo.jpg";
-import {Link} from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -13,24 +12,23 @@ const NavBar = () => {
       <AppBar position="sticky">
         <Toolbar className="navbar">
           <Link to="/">
-          <img src={imagen} alt="jdmlogo" width={70} height={70} />
+            <img src={imagen} alt="jdmlogo" width={70} height={70} />
           </Link>
           <Link to="/" className="li">
-          Home
+            Home
           </Link>
           <Link to="/about" className="li">
-          About
-          </Link>
-          <Link to="/contact" className="li">
-          Contact
+            About
           </Link>
           <Link to="/category/car" className="li">
-          Cars
+            Cars
           </Link>
           <Link to="/category/bike" className="li">
-          Bikes
+            Bikes
           </Link>
-          <CartWidget />
+          <Link to="/cart" className="li">
+            <CartWidget />
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>

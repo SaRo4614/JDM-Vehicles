@@ -1,14 +1,13 @@
-import React from "react";
-import Button from "@mui/material/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { CartContext } from "../../context/CartContext";
+import React, { useContext } from "react";
 
 const CartWidget = () => {
+  const { amountCart } = useContext(CartContext);
   return (
     <div>
-      <Button color="inherit">
-        <ShoppingCartIcon /> 
-      </Button>
-      0
+      <ShoppingCartIcon />
+      <span>{amountCart()}</span>
     </div>
   );
 };
