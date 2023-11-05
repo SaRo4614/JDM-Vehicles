@@ -1,4 +1,4 @@
-# Vehicle Sales Exommerce
+# Vehicle Sales Ecommerce
 
 ## Proyecto perteneciente al curso de React JS de CODERHOUSE
 
